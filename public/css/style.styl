@@ -1,9 +1,9 @@
-$regular   = 'RobotoRegular'
-$bold      = 'RobotoBold'
-$medium    = 'RobotoMedium'
-$light     = 'RobotoLight'
-$color   = #FDB913
-$default = #007DC5
+$regular  = 'RobotoRegular'
+$bold     = 'RobotoBold'
+$medium   = 'RobotoMedium'
+$light    = 'RobotoLight'
+$color    = #E00712
+$default  = #007DC5
 flexCenter()
 	display flex
 	display -webkit-flex
@@ -280,6 +280,8 @@ strong
 		color #000000
 		max-width 360px
 		margin auto
+		position absolute
+		z-index 5
 		h2
 			font-size 24px
 			line-height 26px
@@ -290,6 +292,12 @@ strong
 			line-height 20px
 			font-family $light
 			margin 10px 0
+		i
+			font-size 60px
+			color $color
+		&.js-opacity
+			opacity 0
+			z-index -5
 		.js-input
 			margin 10px 0
 		.js-button
